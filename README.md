@@ -48,6 +48,6 @@ If the project is imported in PyCharm, then the file can be run directly by sett
 See also the list of [contributors](https://github.com/rajatdiptabiswas/tetris-pygame/graphs/contributors) who participated in this project.
 
 
-## Acknowledgments
+## Acknowledgements
 * [Pygame Documentations](https://www.pygame.org/docs/)
 * [freeCodeCamp.org: Tetris Python Tutorial using Pygame](https://www.freecodecamp.org/news/beaucarnes/tetris-python-tutorial-pygame--t3tR1spY6)
