@@ -1,5 +1,5 @@
 # Tetris
-Tetris game made with the PyGame library in Python.
+Tetris game made with the Pygame library in Python.
 
 
 ## Installing
@@ -12,7 +12,7 @@ pip3 install pygame
 
 
 Another alternative would be to import the contents of the repository in a PyCharm project.
-The PyGame library can be installed in a virtual environment of PyCharm using the steps mentioned [here](https://www.jetbrains.com/help/pycharm/installing-uninstalling-and-upgrading-packages.html).
+The Pygame library can be installed in a virtual environment of PyCharm using the steps mentioned [here](https://www.jetbrains.com/help/pycharm/installing-uninstalling-and-upgrading-packages.html).
 
 
 ## Running the application
