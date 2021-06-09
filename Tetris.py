@@ -1,5 +1,6 @@
 import random
 import pygame
+import os 
 
 """
 10 x 20 grid
@@ -30,9 +31,10 @@ block_size = 30  # size of block
 top_left_x = (s_width - play_width) // 2
 top_left_y = s_height - play_height - 50
 
-filepath = '/Users/rajat/PycharmProjects/Tetris/highscore.txt'
-fontpath = '/Users/rajat/PycharmProjects/Tetris/arcade.ttf'
-fontpath_mario = '/Users/rajat/PycharmProjects/Tetris/mario.ttf'
+scriptdir = os.path.dirname(os.path.realpath(__file__))
+filepath = f'{scriptdir}/highscore.txt'
+fontpath = f'{scriptdir}/arcade.ttf'
+fontpath_mario = f'{scriptdir}/mario.ttf'
 
 # shapes formats
 
