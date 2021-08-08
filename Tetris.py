@@ -16,6 +16,7 @@ tetriminos:
     5 - L - orange
     6 - T - purple
 """
+pygame.init()
 
 pygame.font.init()
 
@@ -420,22 +421,6 @@ def main(window):
                 quit()
 
             elif event.type == pygame.KEYDOWN:
-                """if event.key == pygame.K_LEFT:
-                    current_piece.x -= 1  # move x position left
-                    if not valid_space(current_piece, grid):
-                        current_piece.x += 1
-
-                elif event.key == pygame.K_RIGHT:
-                    current_piece.x += 1  # move x position right
-                    if not valid_space(current_piece, grid):
-                        current_piece.x -= 1
-
-                elif event.key == pygame.K_DOWN:
-                    # move shape down
-                    current_piece.y += 1
-                    if not valid_space(current_piece, grid):
-                        current_piece.y -= 1"""
-
                 if event.key == pygame.K_SPACE:
                     # rotate shape
                     current_piece.rotation = current_piece.rotation + 1 % len(current_piece.shape)
@@ -484,7 +469,16 @@ def main(window):
             current_piece = next_piece
             next_piece = get_shape()
             change_piece = False
-            score += clear_rows(grid, locked_positions) * 10  # increment score by 10 for every row cleared
+            cleared_rows = clear_rows(grid, locked_positions)
+            # increase score according to the Original BPS scoring system divided by 10 for big number purposes : https://tetris.wiki/Scoring#Original_BPS_scoring_system
+            if cleared_rows == 1:
+                score += 4
+            elif cleared_rows == 2:
+                score += 10
+            elif cleared_rows == 3:
+                score += 30
+            elif cleared_rows == 4:
+                score += 120
             update_score(score)
 
             if last_score < score:
