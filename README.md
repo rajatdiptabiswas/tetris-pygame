@@ -21,11 +21,6 @@ Download the source code from the repository and run the file just as any other 
 python3 Tetris.py
 ```
 
-If the project is imported in PyCharm, then the file can be run directly by setting the appropriate configurations.
-
-###### Note: The ```filepath``` and ```fontpath``` for the text files and fonts need to be updated according to the location of the project on the user's machine.
-
-
 ## Screenshots
 
 ![1](https://github.com/rajatdiptabiswas/tetris-pygame/blob/master/screenshot-start.png)
@@ -38,8 +33,6 @@ If the project is imported in PyCharm, then the file can be run directly by sett
 ## Prerequisites
 * [Python](https://www.python.org)
 * [Pygame](https://www.pygame.org/wiki/GettingStarted), an open source Python library for making multimedia applications
-* [PyCharm](https://www.jetbrains.com/pycharm/), an integrated development environment for the Python language developed by JetBrains
-
 
 ## Authors
 
